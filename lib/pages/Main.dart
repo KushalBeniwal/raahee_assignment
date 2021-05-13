@@ -177,7 +177,7 @@ class _MainState extends State<Main> {
           ),
           Container(
             padding: EdgeInsets.all(10),
-            child: Text("Hello Alex!", style: TextStyle(fontSize: 30)),
+            child: Text("Hello Alice!", style: TextStyle(fontSize: 30)),
           ),
           buildFloatingSearchBar(),
           Container(
