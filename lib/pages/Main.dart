@@ -177,12 +177,12 @@ class _MainState extends State<Main> {
           Container(
             color: Colors.white,
           ),
+          buildFloatingSearchBar(),
           Container(
             padding: EdgeInsets.all(10),
             child: Text("Hello Alice!",
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500)),
           ),
-          buildFloatingSearchBar(),
           Container(
             padding: EdgeInsets.only(top: 140, left: 10, right: 10),
             child: Text("Upcoming appointment",
@@ -282,6 +282,7 @@ class _MainState extends State<Main> {
         MediaQuery.of(context).orientation == Orientation.portrait;
 
     return FloatingSearchBar(
+      backdropColor: Colors.white,
       backgroundColor: Colors.grey[100],
       margins: EdgeInsets.only(top: 70, left: 10, right: 10),
       hint: 'Search doctor here',
@@ -315,10 +316,6 @@ class _MainState extends State<Main> {
             color: Colors.white,
             elevation: 4.0,
             child: Column(
-              mainAxisSize: MainAxisSize.min,
-              children: Colors.accents.map((color) {
-                return Container(height: 112, color: color);
-              }).toList(),
             ),
           ),
         );
