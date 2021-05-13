@@ -6,10 +6,13 @@ class Profile extends StatefulWidget {
 }
 
 class _ProfileState extends State<Profile> {
-  @override
+    @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Row(
+      children: <Widget>[
+        Container(
+        ),
+      ],
     );
   }
 }

@@ -50,9 +50,7 @@ class _HomeState extends State<Home> {
           backgroundColor: Colors.white,
           title: Text("All Doctors", style: TextStyle(color: Colors.green)),
         ),
-        body: Center(
-          child: _options.elementAt(_selectedIndx),
-        ),
+        body: _options.elementAt(_selectedIndx),
         bottomNavigationBar: BottomNavigationBar(
           items: const <BottomNavigationBarItem>[
             BottomNavigationBarItem(
