@@ -14,7 +14,7 @@ class _MainState extends State<Main> {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15.0),
       ),
-      color: Colors.grey[200],
+      color: Colors.grey[100],
       child: Column(
         children: [
           Container(
@@ -33,7 +33,7 @@ class _MainState extends State<Main> {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15.0),
       ),
-      color: Colors.grey[200],
+      color: Colors.grey[100],
       child: Column(
         children: [
           Container(
@@ -51,7 +51,7 @@ class _MainState extends State<Main> {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15.0),
       ),
-      color: Colors.grey[200],
+      color: Colors.grey[100],
       child: Column(
         children: [
           Container(
@@ -69,7 +69,7 @@ class _MainState extends State<Main> {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15.0),
       ),
-      color: Colors.grey[200],
+      color: Colors.grey[100],
       child: Column(
         children: [
           Container(
@@ -88,7 +88,7 @@ class _MainState extends State<Main> {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15.0),
       ),
-      color: Colors.grey[200],
+      color: Colors.grey[100],
       child: Column(
         children: [
           Container(
@@ -107,26 +107,27 @@ class _MainState extends State<Main> {
 
   List<Widget> _ads = <Widget>[
     Card(
-      color: Colors.grey[200],
+      color: Colors.grey[100],
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15.0),
       ),
       child: Row(
         children: <Widget>[
           Container(
-              padding: EdgeInsets.only(top: 15, left: 15, right: 20),
-              child: Column(
-                children: [
-                  Row(
-                    children: [
-                      Text("25%", style: TextStyle(color: Colors.green, fontSize: 27)),
-                      Text("discount", style: TextStyle(fontSize: 18)),
-                    ],
-                  ),
-                  Text("on visit to an", style: TextStyle(fontSize: 18)),
-                  Text("opthalmologist", style: TextStyle(fontSize: 18)),
-                ],
-              ),
+            padding: EdgeInsets.only(top: 15, left: 15, right: 20),
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    Text("25%",
+                        style: TextStyle(color: Colors.green, fontSize: 27)),
+                    Text("discount", style: TextStyle(fontSize: 18)),
+                  ],
+                ),
+                Text("on visit to an", style: TextStyle(fontSize: 18)),
+                Text("opthalmologist", style: TextStyle(fontSize: 18)),
+              ],
+            ),
           ),
           Container(
             padding: EdgeInsets.only(top: 15, bottom: 15, right: 15),
@@ -136,26 +137,27 @@ class _MainState extends State<Main> {
       ),
     ),
     Card(
-      color: Colors.grey[200],
+      color: Colors.grey[100],
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15.0),
       ),
       child: Row(
         children: <Widget>[
           Container(
-              padding: EdgeInsets.only(top: 15, left: 15, right: 20),
-              child: Column(
-                children: [
-                  Row(
-                    children: [
-                      Text("25%", style: TextStyle(color: Colors.green, fontSize: 27)),
-                      Text("discount", style: TextStyle(fontSize: 18)),
-                    ],
-                  ),
-                  Text("on visit to an", style: TextStyle(fontSize: 18)),
-                  Text("opthalmologist", style: TextStyle(fontSize: 18)),
-                ],
-              ),
+            padding: EdgeInsets.only(top: 15, left: 15, right: 20),
+            child: Column(
+              children: [
+                Row(
+                  children: [
+                    Text("25%",
+                        style: TextStyle(color: Colors.green, fontSize: 27)),
+                    Text("discount", style: TextStyle(fontSize: 18)),
+                  ],
+                ),
+                Text("on visit to an", style: TextStyle(fontSize: 18)),
+                Text("opthalmologist", style: TextStyle(fontSize: 18)),
+              ],
+            ),
           ),
           Container(
             padding: EdgeInsets.only(top: 15, bottom: 15, right: 15),
@@ -177,15 +179,17 @@ class _MainState extends State<Main> {
           ),
           Container(
             padding: EdgeInsets.all(10),
-            child: Text("Hello Alice!", style: TextStyle(fontSize: 30)),
+            child: Text("Hello Alice!",
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500)),
           ),
           buildFloatingSearchBar(),
           Container(
             padding: EdgeInsets.only(top: 140, left: 10, right: 10),
-            child: Text("Upcoming appointment", style: TextStyle(fontSize: 25)),
+            child: Text("Upcoming appointment",
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500)),
           ),
           Container(
-            padding: EdgeInsets.only(top: 200, left: 10, right: 10),
+            padding: EdgeInsets.only(top: 180, left: 10, right: 10),
             child: Card(
               semanticContainer: true,
               shape: RoundedRectangleBorder(
@@ -194,22 +198,30 @@ class _MainState extends State<Main> {
               color: Colors.green,
               child: Row(
                 children: [
+                  Padding(padding: EdgeInsets.only(left: 10)),
                   Container(
                     padding: EdgeInsets.only(left: 5, top: 15, bottom: 15),
                     height: 100,
-                    width: 100,
-                    child: Image.asset("imgs/doc.png"),
+                    width: 75,
+                    child: Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15.0),
+                      ),
+                      child: Image.asset("imgs/doc.png"),
+                    ),
                   ),
+                  Padding(padding: EdgeInsets.only(left: 15)),
                   Container(
                     height: 90,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Padding(padding: EdgeInsets.only(top: 7)),
+                        Padding(padding: EdgeInsets.only(top: 7, left: 15)),
                         Text("Dr. Jane Smith",
                             style: TextStyle(
                               color: Colors.white,
                               fontSize: 20,
+                              fontWeight: FontWeight.w500,
                             )),
                         Padding(padding: EdgeInsets.only(top: 6)),
                         Text("Therapist",
@@ -241,11 +253,12 @@ class _MainState extends State<Main> {
           ),
           Container(
             padding: EdgeInsets.only(top: 320, left: 10, right: 10),
-            child: Text("How can we help you?", style: TextStyle(fontSize: 25)),
+            child: Text("How can we help you?",
+                style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500)),
           ),
           Container(
               padding:
-                  EdgeInsets.only(top: 360, left: 10, right: 10, bottom: 130),
+                  EdgeInsets.only(top: 350, left: 10, right: 10, bottom: 150),
               child: ListView(
                 padding: const EdgeInsets.all(8),
                 scrollDirection: Axis.horizontal,
@@ -253,7 +266,7 @@ class _MainState extends State<Main> {
               )),
           Container(
               padding:
-                  EdgeInsets.only(top: 500, left: 10, right: 10, bottom: 10),
+                  EdgeInsets.only(top: 490, left: 10, right: 10, bottom: 10),
               child: ListView(
                 padding: const EdgeInsets.all(8),
                 scrollDirection: Axis.horizontal,
@@ -269,7 +282,7 @@ class _MainState extends State<Main> {
         MediaQuery.of(context).orientation == Orientation.portrait;
 
     return FloatingSearchBar(
-      backgroundColor: Colors.grey[200],
+      backgroundColor: Colors.grey[100],
       margins: EdgeInsets.only(top: 70, left: 10, right: 10),
       hint: 'Search doctor here',
       scrollPadding: const EdgeInsets.only(top: 16, bottom: 56),

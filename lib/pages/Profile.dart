@@ -17,7 +17,7 @@ class _ProfileState extends State<Profile> {
       ),
       Container(
         padding: EdgeInsets.all(10),
-        child: Text("Profile", style: TextStyle(fontSize: 30)),
+        child: Text("Profile", style: TextStyle(fontSize: 30, fontWeight: FontWeight.w500)),
       ),
       Container(
         padding: EdgeInsets.only(top: 70, bottom: 20),
@@ -32,8 +32,8 @@ class _ProfileState extends State<Profile> {
                     image: AssetImage("imgs/avatar.png"),
                   )),
             ),
-            Padding(padding: EdgeInsets.all(5)),
-            Text("Alice", style: TextStyle(fontSize: 30)),
+            Padding(padding: EdgeInsets.all(9)),
+            Text("Alice", style: TextStyle(fontSize: 25, fontWeight: FontWeight.w500)),
           ],
         ),
       ),
@@ -52,7 +52,7 @@ class _ProfileState extends State<Profile> {
                     child: Icon(Icons.assignment_outlined, color: Colors.green),
                   ),
                 ),
-                title: Text("My appointments", style: TextStyle(fontSize: 20)),
+                title: Text("My appointments", style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: Colors.grey[800])),
                 trailing: TextButton(
                   onPressed: () {
                     Navigator.push(
@@ -73,7 +73,7 @@ class _ProfileState extends State<Profile> {
                     child: Icon(Icons.person_outline, color: Colors.green),
                   ),
                 ),
-                title: Text("Personal details", style: TextStyle(fontSize: 20)),
+                title: Text("Personal details", style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: Colors.grey[800])),
                 trailing: TextButton(
                   onPressed: () {
                     Navigator.push(
@@ -94,7 +94,7 @@ class _ProfileState extends State<Profile> {
                     child: Icon(Icons.rate_review_outlined, color: Colors.green),
                   ),
                 ),
-                title: Text("Reviews", style: TextStyle(fontSize: 20)),
+                title: Text("Reviews", style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: Colors.grey[800])),
                 trailing: TextButton(
                   onPressed: () {
                     Navigator.push(
@@ -115,7 +115,7 @@ class _ProfileState extends State<Profile> {
                     child: Icon(Icons.settings_outlined, color: Colors.green),
                   ),
                 ),
-                title: Text("Settings", style: TextStyle(fontSize: 20)),
+                title: Text("Settings", style: TextStyle(fontSize: 18, fontWeight: FontWeight.w500, color: Colors.grey[800])),
                 trailing: TextButton(
                   onPressed: () {
                     Navigator.push(
